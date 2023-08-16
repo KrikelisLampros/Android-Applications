@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/welcometxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Please put the category that you want to make a record below"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/surname"
+        android:layout_width="256dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Your Name "
+        app:layout_constraintStart_toStartOf="@+id/welcometxt"
+        app:layout_constraintTop_toBottomOf="@+id/welcometxt" />
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="256dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Your last name "
+        app:layout_constraintStart_toStartOf="@+id/surname"
+        app:layout_constraintTop_toBottomOf="@+id/surname" />
+
+    <EditText
+        android:id="@+id/eidikotita"
+        android:layout_width="256dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Please type the category "
+        app:layout_constraintStart_toStartOf="@+id/lastname"
+        app:layout_constraintTop_toBottomOf="@+id/lastname" />
+
+    <Button
+        android:id="@+id/go_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:onClick="GotoListView"
+        android:text="log in "
+        android:textColor="@color/white"
+        android:backgroundTint="@color/teal_700"
+        app:layout_constraintStart_toStartOf="@+id/eidikotita"
+        app:layout_constraintTop_toBottomOf="@+id/eidikotita" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
