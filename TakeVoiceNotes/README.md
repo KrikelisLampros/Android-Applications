@@ -1,4 +1,4 @@
-#Voice Note Application
+# Voice Note Application
 
 This app allow the user to login via Surname , LastName and the Category.
 The user can take a note through his Microphone; Also he is able to update and delete the note .
